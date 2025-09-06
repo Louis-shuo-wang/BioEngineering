@@ -166,9 +166,9 @@
   },
   "psi": {
     "description": "Minimum branching age",
-    "D_value": 28800.0,
+    "D_value": 64800.0,
     "units": "s",
-    "ND_value": 0.5,
+    "ND_value": 1.125,
     "provenance": "Anderson 1998"
   },
   "c_br": {

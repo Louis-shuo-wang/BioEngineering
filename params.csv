@@ -1,0 +1,32 @@
+Parameter,description,D_value,units,ND_value,provenance
+Delta_x,Spatial discretization,2.5e-05,m,0.005,Calculated
+Delta_t,Temporal discretization,CFL condition,,CFL condition,Stability constraint
+h,Slab thickness for dimension conversion,0.0001,m,0.02,Watson 2019
+R_c,Tumor and vessel cell radius,1.25e-05,m,0.005,Melicow 1982
+D_c,TAF diffusion coefficient,5.21e-11,m^2/s,0.12,Mac Gabhann 2005; Addison-Smith 2008
+xi_c,TAF decay rate,3.47e-08,1/s,0.002,Billy 2009
+eta,TAF production rate,1.7e-22,mol/(cell*s),6270.0,Hinow 2009
+lambda,TAF uptake rate,2.71e-20,m^3/(cell*s),0.1,Anderson 1998
+D_d,Drug diffusion coefficient,2.17e-10,m^2/s,0.5,Souri 2024
+xi_d,Drug decay rate,1.74e-07,1/s,0.01,Gevertz 2014
+rho_d,Drug uptake rate,1.36e-19,m^3/(cell*s),0.5,Gevertz 2014
+S_d,Drug supply rate,3.94e-20,mol/(cell*s),2,Gevertz 2014
+p_r,Damage clearance rate,,,0.2,Gevertz 2014
+D_o,Oxygen diffusion coefficient,2.78e-10,m^2/s,0.64,Takahashi 1966
+xi_o,Oxygen decay rate,4.34e-07,1/s,0.025,Anderson 2007
+rho_o,Oxygen uptake rate,6.25e-17,mol/(cell*s),34.39,Gevertz 2014
+S_o,Oxygen supply rate,9.49e-19,m^3/(cell*s),3.5,Calibrated for model consistency
+varepsilon,Tumor motility intensity,,,0.0215,Anderson 2005
+o_max,Maximum oxygen concentration,6.7,mol/m^3,1,Hinow 2009
+o_hyp,Hypoxia threshold,1.675,mol/m^3,0.25,Hinow 2009
+o_apop,Apoptosis threshold,0.335,mol/m^3,0.05,Hinow 2009
+D_n,Endothelial diffusion coefficient,2e-13,m^2/s,0.000461,Anderson 1998
+chi_0,Chemotaxis coefficient,0.00026,m^5/(s*mol),0.0599,Anderson 1998
+alpha,Chemotaxis saturation parameter,1.6667e-07,mol/m^3,0.6,Anderson 1998
+psi,Minimum branching age,64800.0,s,1.125,Anderson 1998
+c_br,Baseline branching rate,,,1,Flandoli 2023
+aS_death,Death threshold (sensitive cells),,,0.5,Gevertz 2014
+Th_multi,Death threshold ratio (resistant cells),5,,5,Gevertz 2014
+wp_age,Cell cycle duration,"Uniform[3.24e4, 3.96e4] s",,0.56–-0.69,Demicheli 1991; Chignola 2005
+alpha_n,Proliferation rate,Derived from log(2)/wp_age,,1.0082–-1.2323,Derived
+F_max,Maximum neighbor cell count,10,,10,Flandoli 2023
