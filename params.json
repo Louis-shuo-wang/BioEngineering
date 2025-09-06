@@ -1,0 +1,210 @@
+{
+  "Delta_x": {
+    "description": "Spatial discretization",
+    "D_value": 2.5e-05,
+    "units": "m",
+    "ND_value": 0.005,
+    "provenance": "Calculated"
+  },
+  "Delta_t": {
+    "description": "Temporal discretization",
+    "D_value": "CFL condition",
+    "ND_value": "CFL condition",
+    "provenance": "Stability constraint"
+  },
+  "h": {
+    "description": "Slab thickness for dimension conversion",
+    "D_value": 0.0001,
+    "units": "m",
+    "ND_value": 0.02,
+    "provenance": "Watson 2019"
+  },
+  "R_c": {
+    "description": "Tumor and vessel cell radius",
+    "D_value": 1.25e-05,
+    "units": "m",
+    "ND_value": 0.005,
+    "provenance": "Melicow 1982"
+  },
+  "D_c": {
+    "description": "TAF diffusion coefficient",
+    "D_value": 5.21e-11,
+    "units": "m^2/s",
+    "ND_value": 0.12,
+    "provenance": "Mac Gabhann 2005; Addison-Smith 2008"
+  },
+  "xi_c": {
+    "description": "TAF decay rate",
+    "D_value": 3.47e-08,
+    "units": "1/s",
+    "ND_value": 0.002,
+    "provenance": "Billy 2009"
+  },
+  "eta": {
+    "description": "TAF production rate",
+    "D_value": 1.7e-22,
+    "units": "mol/(cell*s)",
+    "ND_value": 6270.0,
+    "provenance": "Hinow 2009"
+  },
+  "lambda": {
+    "description": "TAF uptake rate",
+    "D_value": 2.71e-20,
+    "units": "m^3/(cell*s)",
+    "ND_value": 0.1,
+    "provenance": "Anderson 1998"
+  },
+  "D_d": {
+    "description": "Drug diffusion coefficient",
+    "D_value": 2.17e-10,
+    "units": "m^2/s",
+    "ND_value": 0.5,
+    "provenance": "Souri 2024"
+  },
+  "xi_d": {
+    "description": "Drug decay rate",
+    "D_value": 1.74e-07,
+    "units": "1/s",
+    "ND_value": 0.01,
+    "provenance": "Gevertz 2014"
+  },
+  "rho_d": {
+    "description": "Drug uptake rate",
+    "D_value": 1.36e-19,
+    "units": "m^3/(cell*s)",
+    "ND_value": 0.5,
+    "provenance": "Gevertz 2014"
+  },
+  "S_d": {
+    "description": "Drug supply rate",
+    "D_value": 3.94e-20,
+    "units": "mol/(cell*s)",
+    "ND_value": 2,
+    "provenance": "Gevertz 2014"
+  },
+  "p_r": {
+    "description": "Damage clearance rate",
+    "D_value": null,
+    "ND_value": 0.2,
+    "provenance": "Gevertz 2014"
+  },
+  "D_o": {
+    "description": "Oxygen diffusion coefficient",
+    "D_value": 2.78e-10,
+    "units": "m^2/s",
+    "ND_value": 0.64,
+    "provenance": "Takahashi 1966"
+  },
+  "xi_o": {
+    "description": "Oxygen decay rate",
+    "D_value": 4.34e-07,
+    "units": "1/s",
+    "ND_value": 0.025,
+    "provenance": "Anderson 2007"
+  },
+  "rho_o": {
+    "description": "Oxygen uptake rate",
+    "D_value": 6.25e-17,
+    "units": "mol/(cell*s)",
+    "ND_value": 34.39,
+    "provenance": "Gevertz 2014"
+  },
+  "S_o": {
+    "description": "Oxygen supply rate",
+    "D_value": 9.49e-19,
+    "units": "m^3/(cell*s)",
+    "ND_value": 3.5,
+    "provenance": "Calibrated for model consistency"
+  },
+  "varepsilon": {
+    "description": "Tumor motility intensity",
+    "D_value": null,
+    "ND_value": 0.0215,
+    "provenance": "Anderson 2005"
+  },
+  "o_max": {
+    "description": "Maximum oxygen concentration",
+    "D_value": 6.7,
+    "units": "mol/m^3",
+    "ND_value": 1,
+    "provenance": "Hinow 2009"
+  },
+  "o_hyp": {
+    "description": "Hypoxia threshold",
+    "D_value": 1.675,
+    "units": "mol/m^3",
+    "ND_value": 0.25,
+    "provenance": "Hinow 2009"
+  },
+  "o_apop": {
+    "description": "Apoptosis threshold",
+    "D_value": 0.335,
+    "units": "mol/m^3",
+    "ND_value": 0.05,
+    "provenance": "Hinow 2009"
+  },
+  "D_n": {
+    "description": "Endothelial diffusion coefficient",
+    "D_value": 2e-13,
+    "units": "m^2/s",
+    "ND_value": 0.000461,
+    "provenance": "Anderson 1998"
+  },
+  "chi_0": {
+    "description": "Chemotaxis coefficient",
+    "D_value": 0.00026,
+    "units": "m^5/(s*mol)",
+    "ND_value": 0.0599,
+    "provenance": "Anderson 1998"
+  },
+  "alpha": {
+    "description": "Chemotaxis saturation parameter",
+    "D_value": 1.6667e-07,
+    "units": "mol/m^3",
+    "ND_value": 0.6,
+    "provenance": "Anderson 1998"
+  },
+  "psi": {
+    "description": "Minimum branching age",
+    "D_value": 28800.0,
+    "units": "s",
+    "ND_value": 0.5,
+    "provenance": "Anderson 1998"
+  },
+  "c_br": {
+    "description": "Baseline branching rate",
+    "D_value": null,
+    "ND_value": 1,
+    "provenance": "Flandoli 2023"
+  },
+  "aS_death": {
+    "description": "Death threshold (sensitive cells)",
+    "D_value": null,
+    "ND_value": 0.5,
+    "provenance": "Gevertz 2014"
+  },
+  "Th_multi": {
+    "description": "Death threshold ratio (resistant cells)",
+    "D_value": 5,
+    "ND_value": 5,
+    "provenance": "Gevertz 2014"
+  },
+  "wp_age": {
+    "description": "Cell cycle duration",
+    "D_value": "Uniform[3.24e4, 3.96e4] s",
+    "ND_value": "0.56--0.69",
+    "provenance": "Demicheli 1991; Chignola 2005"
+  },
+  "alpha_n": {
+    "description": "Proliferation rate",
+    "D_value": "Derived from log(2)/wp_age",
+    "ND_value": "1.0082--1.2323",
+    "provenance": "Derived"
+  },
+  "F_max": {
+    "description": "Maximum neighbor cell count",
+    "D_value": 10,
+    "ND_value": 10,
+    "provenance": "Flandoli 2023"
+  }
+}
