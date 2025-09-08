@@ -15,7 +15,7 @@ p_r,Damage clearance rate,,,0.2,Gevertz 2014
 D_o,Oxygen diffusion coefficient,2.78e-10,m^2/s,0.64,Takahashi 1966
 xi_o,Oxygen decay rate,4.34e-07,1/s,0.025,Anderson 2007
 rho_o,Oxygen uptake rate,6.25e-17,mol/(cell*s),34.39,Gevertz 2014
-S_o,Oxygen supply rate,9.49e-19,m^3/(cell*s),3.5,Calibrated for model consistency
+S_o,Oxygen supply rate,9.33e-19,m^3/(cell*s),3.44,Zhu 2015
 varepsilon,Tumor motility intensity,,,0.0215,Anderson 2005
 o_max,Maximum oxygen concentration,6.7,mol/m^3,1,Hinow 2009
 o_hyp,Hypoxia threshold,1.675,mol/m^3,0.25,Hinow 2009
