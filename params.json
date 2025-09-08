@@ -111,10 +111,10 @@
   },
   "S_o": {
     "description": "Oxygen supply rate",
-    "D_value": 9.49e-19,
+    "D_value": 9.33e-19,
     "units": "m^3/(cell*s)",
-    "ND_value": 3.5,
-    "provenance": "Calibrated for model consistency"
+    "ND_value": 3.44,
+    "provenance": "Zhu 2015"
   },
   "varepsilon": {
     "description": "Tumor motility intensity",
