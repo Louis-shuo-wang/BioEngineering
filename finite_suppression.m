@@ -2,7 +2,7 @@ clear all; close all;
 
 params = initializeParams;
 
-Dn = 20 * params.Dn;
+Dn = 100 * params.Dn;
 Dc = 0.5 * params.Dc;
 alpha = params.alpha;
 xic = 5 * params.xic;
@@ -64,6 +64,7 @@ pc_fun = @(pval) pval * chi_eff_fun(pval) * n0 - Dn * xic;
 
 chi_eff_val = chi_eff_fun(p);
 num = p * chi_eff_val * n0 - Dn * xic;
+num1 = num/(Dn*Dc);
 if num > 0
     k2 = sqrt(num / (Dn * Dc));
     k_star = pi/k2;
@@ -72,7 +73,7 @@ else
 end
 fprintf('Diagnostics: p=%.3g, chi_eff=%.3g, Dn*xi_c=%.3g, p*chi_eff*n0=%.3g\n', ...
     p, chi_eff_val, Dn*xic, p*chi_eff_val*n0);
-fprintf('k2 = %.4g, critical k* = %.4g', k2, k_star);
+fprintf('k2 = %.4g, wave = %.4f, critical k* = %.4f', k2, num1,k_star);
 
 
 % diagnostics: compute critical p and 
